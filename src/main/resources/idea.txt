@@ -1,0 +1,19 @@
+COMPANY FILE SYSTEM
+
+FEATURES:
+
+database(files, employees, roles, users,departments)
+
+employees manyToOne department, files should have rank requirement or a password
+
+CRUD(files, employees)JpaRepository, Spring beans
+
+Basic front-end using html, thymeleaf, bootstrap
+
+REST API using Postman f.e.
+
+Undefined features
+
+...
+
+Approximately 3 weeks
