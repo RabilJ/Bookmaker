@@ -15,4 +15,8 @@ public class HomeController {
     public String hr(){
         return "humanresources";
     }
+    @GetMapping("/filedb")
+    public String files(){
+        return "files";
+    }
 }
