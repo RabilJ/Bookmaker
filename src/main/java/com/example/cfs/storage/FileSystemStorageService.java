@@ -1,6 +1,7 @@
 package com.example.cfs.storage;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
@@ -19,8 +20,9 @@ public class FileSystemStorageService implements StorageService {
 
     private final Path rootLocation;
 
+
     @Autowired
-    public FileSystemStorageService(StorageProperties properties) {
+    public FileSystemStorageService( StorageProperties properties) {
         this.rootLocation = Paths.get(properties.getLocation());
     }
 

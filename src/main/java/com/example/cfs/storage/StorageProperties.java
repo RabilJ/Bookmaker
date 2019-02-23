@@ -2,11 +2,7 @@ package com.example.cfs.storage;
 
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.stereotype.Component;
 
-@Component
-@EnableConfigurationProperties
 @ConfigurationProperties("storage")
 public class StorageProperties {
 
@@ -14,6 +10,7 @@ public class StorageProperties {
      * Folder location for storing files
      */
     private String location = "upload-dir";
+
 
     public String getLocation() {
         return location;
